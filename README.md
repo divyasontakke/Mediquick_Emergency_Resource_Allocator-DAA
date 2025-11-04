@@ -1,4 +1,3 @@
-# Mediquick_Emergency_Resource_Allocator-DAA
 <h1 align="center"> MediQuick: Emergency Resource Allocator</h1>
 
 <p align="center">
@@ -11,7 +10,7 @@
   <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/GUI-Tkinter-lightgrey" alt="Tkinter">
   <img src="https://img.shields.io/badge/Algorithms-Greedy%20%7C%20DP%20%7C%20Backtracking-brightgreen" alt="Algorithms">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+
 </p>
 
 ---
@@ -89,14 +88,28 @@ The interface is built using **Tkinter**, designed for simplicity and readabilit
    git clone https://github.com/<your-username>/MediQuick.git
    cd MediQuick
 2. **Run the project**
+ ```bash
    python mediquick.py
+```
 3. **Use the App**
    Click "▶ Run Simulation" to generate random hospitals, patients, and ambulances
    Click "♻ Reallocate Resources" to simulate updates and new emergencies
 
-##  Folder Structure
-MediQuick/
-│
-├── mediquick.py       # Main Python application
-├── README.md          # Documentation
-└── assets/            # Optional folder for screenshots or icons
+## Project Structure
+
+- **algorithms/** – Contains all core logic for resource allocation  
+  - `greedy.py` – Greedy algorithm for assigning nearest ambulances  
+  - `dynamic_programming.py` – DP algorithm for optimal hospital assignment  
+  - `backtracking.py` – Backtracking for reallocation when hospitals are full  
+
+- **ui/** – Contains the Tkinter-based user interface  
+  - `mediquick.py` – Main Tkinter UI class for simulation and visualization  
+
+- **main.py** – Entry point of the application; integrates algorithms and UI  
+
+- `README.md` – Project documentation
+
+## License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it for educational or research purposes.
