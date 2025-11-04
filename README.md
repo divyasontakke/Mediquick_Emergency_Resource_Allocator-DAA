@@ -95,6 +95,8 @@ The interface is built using **Tkinter**, designed for simplicity and readabilit
    Click "▶ Run Simulation" to generate random hospitals, patients, and ambulances
    Click "♻ Reallocate Resources" to simulate updates and new emergencies
 
+---
+
 ## Project Structure
 
 - **algorithms/** – Contains all core logic for resource allocation  
@@ -108,6 +110,8 @@ The interface is built using **Tkinter**, designed for simplicity and readabilit
 - **main.py** – Entry point of the application; integrates algorithms and UI  
 
 - `README.md` – Project documentation
+
+---
 
 ## License
 
